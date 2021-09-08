@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activitymain.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="75dp"
+        android:padding="32dp">
+
+        <TextView
+            android:id="@+id/tvMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Bekerja,"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNamaPegawai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvMain"
+            android:text="Nama"
+            android:textSize="15sp" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabNotifikasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/white"
+            android:clickable="true"
+            android:src="@drawable/ic_notifications_24" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Barang Masuk"
+                android:layout_below="@id/btnBakel"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="14dp"
+                android:textColor="@color/black"
+                />
+
+            <Button
+                android:id="@+id/btnBama"
+                android:layout_width="89dp"
+                android:layout_height="84dp"
+                android:background="@drawable/ic_correct"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Barang Keluar"
+                android:layout_below="@id/btnBakel"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="14dp"
+                />
+
+            <Button
+                android:id="@+id/btnBakel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_package_transport"
+                android:drawableTint="@color/white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Barang Keluar"
+                android:layout_below="@id/btnBakel"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="14dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stok Barang"
+                android:layout_below="@id/btnStb"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/black"
+                />
+
+            <Button
+                android:id="@+id/btnStb"
+                android:layout_width="103dp"
+                android:layout_height="86dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_stock" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ic_frame_icon"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="32dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnHome"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/ic_frame_home"
+                app:tint="@null" />
+
+            <Button
+                android:id="@+id/btnProfile"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/ic_frame_user"
+                android:backgroundTint="@color/black" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

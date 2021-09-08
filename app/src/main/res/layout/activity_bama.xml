@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitymain.BamaActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_bama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabNotifikasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/white"
+            android:clickable="true"
+            android:src="@drawable/ic_notifications_24"
+            android:contentDescription="TODO" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_below="@id/fabNotifikasi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvNoFa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Faktur"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="14dp"/>
+
+                <EditText
+                    android:id="@+id/etNoFa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvNoBarcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNoFa"
+                    android:layout_marginTop="15dp"
+                    android:text="No Barcode"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etNoBarcode"
+                    android:layout_width="192dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etNoFa"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="-1dp"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/btnCameraScan"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/etNoFa"
+                    android:background="@drawable/ic_qr_code_scanner"
+                    android:layout_alignBottom="@+id/etNoBarcode"
+                    />
+
+                <TextView
+                    android:id="@+id/tvKoBa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNoBarcode"
+                    android:layout_marginTop="19dp"
+                    android:text="Kode Barang"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etKoBa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_below="@id/etNoBarcode"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvTanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvKoBa"
+                    android:layout_marginTop="24dp"
+                    android:text="Tanggal"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etTanggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_below="@id/etKoBa"
+                    android:inputType="date"
+                    />
+
+                <TextView
+                    android:id="@+id/tvNamaItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Item"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/tvTanggal"
+                    />
+
+                <EditText
+                    android:id="@+id/etNamaItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_below="@id/etTanggal"
+                    />
+
+                <TextView
+                    android:id="@+id/tvJenisItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis Item"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/tvNamaItem"
+                    />
+
+                <EditText
+                    android:id="@+id/etJenisItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_below="@id/etNamaItem"
+                    />
+
+                <TextView
+                    android:id="@+id/tvJumlah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvJenisItem"
+                    android:layout_marginTop="26dp"
+                    android:text="Jumlah"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etJumlah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:inputType="number"
+                    android:layout_below="@id/etJenisItem"
+                    />
+
+                <TextView
+                    android:id="@+id/tvWarna"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Warna"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/tvJumlah"
+                    />
+
+                <EditText
+                    android:id="@+id/etWarna"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:inputType="text"
+                    android:layout_below="@id/etJumlah"
+                    />
+
+                <TextView
+                    android:id="@+id/tvKeterangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvWarna"
+                    android:layout_marginTop="33dp"
+                    android:text="Keterangan"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etKeterangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:inputType="text"
+                    android:layout_below="@id/etWarna"
+                    android:padding="25dp"
+                    />
+
+                <Button
+                    android:id="@+id/btnSimpan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="100dp"
+                    android:hint="SIMPAN"
+                    android:textColorHint="@color/black"
+                    />
+            </RelativeLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

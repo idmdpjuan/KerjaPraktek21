@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activityall.TambahStokActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvNoBarco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="No Barcode"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etNoBarco"
+                    android:layout_width="192dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="-1dp"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/btnCameScan"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_qr_code_scanner" />
+
+                <TextView
+                    android:id="@+id/tvKodB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNoBarco"
+                    android:layout_marginTop="19dp"
+                    android:text="Kode Barang"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etKodB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etNoBarco"
+                    android:layout_marginStart="110dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvTang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvKodB"
+                    android:layout_marginTop="24dp"
+                    android:text="Tanggal"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etTang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etKodB"
+                    android:layout_marginStart="110dp"
+                    android:inputType="date" />
+
+                <TextView
+                    android:id="@+id/tvNamaItE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTang"
+                    android:layout_marginTop="20dp"
+                    android:text="Nama Item"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etNamaItE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etTang"
+                    android:layout_marginStart="110dp" />
+
+                <TextView
+                    android:id="@+id/tvJeItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNamaItE"
+                    android:layout_marginTop="20dp"
+                    android:text="Jenis Item"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etJeItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etNamaItE"
+                    android:layout_marginStart="110dp" />
+
+                <TextView
+                    android:id="@+id/tvJulah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvJeItem"
+                    android:layout_marginTop="26dp"
+                    android:text="Jumlah"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etJulah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etJeItem"
+                    android:layout_marginStart="110dp"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/tvWarn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvJulah"
+                    android:layout_marginTop="20dp"
+                    android:text="Warna"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etWarn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etJulah"
+                    android:layout_marginStart="110dp"
+                    android:inputType="text" />
+
+                <Button
+                    android:id="@+id/btnTamb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="100dp"
+                    android:hint="UBAH"
+                    android:textColorHint="@color/black" />
+            </RelativeLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activityall.UbahStokActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvNoBarc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="No Barcode"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etNoBarc"
+                    android:layout_width="192dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="-1dp"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/btnCamScan"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_qr_code_scanner"
+                    />
+
+                <TextView
+                    android:id="@+id/tvKoB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNoBarc"
+                    android:layout_marginTop="19dp"
+                    android:text="Kode Barang"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etKoB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_below="@id/etNoBarc"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvTangg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvKoB"
+                    android:layout_marginTop="24dp"
+                    android:text="Tanggal"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etTangg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_below="@id/etKoB"
+                    android:inputType="date"
+                    />
+
+                <TextView
+                    android:id="@+id/tvNamaIt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Item"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/tvTangg"
+                    />
+
+                <EditText
+                    android:id="@+id/etNamaIt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_below="@id/etTangg"
+                    />
+
+                <TextView
+                    android:id="@+id/tvJenItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis Item"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/tvNamaIt"
+                    />
+
+                <EditText
+                    android:id="@+id/etJenItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_below="@id/etNamaIt"
+                    />
+
+                <TextView
+                    android:id="@+id/tvJumlah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvJenItem"
+                    android:layout_marginTop="26dp"
+                    android:text="Jumlah"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etJumla"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:inputType="number"
+                    android:layout_below="@id/etJenItem"
+                    />
+
+                <TextView
+                    android:id="@+id/tvWarn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Warna"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/tvJumlah"
+                    />
+
+                <EditText
+                    android:id="@+id/etWarn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:inputType="text"
+                    android:layout_below="@id/etJumla"
+                    />
+
+                <Button
+                    android:id="@+id/btnUbah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="100dp"
+                    android:hint="UBAH"
+                    android:textColorHint="@color/black"
+                    />
+            </RelativeLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
